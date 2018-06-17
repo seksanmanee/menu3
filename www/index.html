@@ -1,796 +1,451 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta charset="utf-8">
+<title>Restaurants</title>
 
-    <!-- Title -->
-    <title>Yummy Blog - Food Blog Template</title>
+<!--META-->
+<meta name="viewport" content="width=device-width initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+<!--FONTS-->
+<link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- Core Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive/responsive.css" rel="stylesheet">
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
+  
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!--JS-->
 
 </head>
 
 <body>
-    <!-- Preloader Start -->
-    <div id="preloader">
-        <div class="yummy-load"></div>
+
+
+<div style='position:fixed;z-index:10;top:80%;right:50%'>
+	<div class="row">
+	<nav class="menu">
+	   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+	   
+	   <label class="menu-open-button" for="menu-open">
+		<span class="lines line-1"></span>
+		<span class="lines line-2"></span>
+		<span class="lines line-3"></span>
+	  </label>
+	  
+	   <a href="#Beverage" data-scroll="" class="menu-item blue"><font style="font-size:15px;">Beverage</font></a>
+	   <a href="#Cocktail" data-scroll="" class="menu-item green"><font style="font-size:15px;">Cocktail</font></a>
+	   <a href="#Dinner" data-scroll="" class="menu-item red"><font style="font-size:15px;">Dinner</font></a>
+	   <a href="#banner" data-scroll="" class="menu-item purple"><i class="fa fa-home"></i></a>
+	   <a href="#SetMenu" data-scroll="" class="menu-item orange"><font style="font-size:15px;">Set Menu</font></a>
+	   <a href="#WineList" data-scroll="" class="menu-item lightblue"><font style="font-size:15px;">Wine List</font></a>
+	</nav>
     </div>
+</div>
 
-    <!-- Background Pattern Swither -->
+<div class="se-pre-con">
 
-    <!-- ****** Top Header Area Start ****** -->
-    <div class="top_header_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 col-sm-6">
-                    <!--  Top Social bar start -->
-                    <div class="top_social_bar">
-						Logo
-                    </div>
-                </div>
-                <!--  Login Register Area -->
-                <div class="col-7 col-sm-6">
-                    <div class="signup-search-area d-flex align-items-center justify-content-end">                        <!-- Search Button Area -->
-                        <div class="search_button">
-                            <a class="searchBtn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- Search Form -->
-                        <div class="search-hidden-form">
-                            <form action="#" method="get">
-                                <input type="search" name="search" id="search-anything" placeholder="Search Anything...">
-                                <input type="submit" value="" class="d-none">
-                                <span class="searchBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ****** Top Header Area End ****** -->
+<div class="cssload-weird">	
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
 
-    <!-- ****** Header Area Start ****** -->
-    <header class="header_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-						<br><br>
-						<center>
-						<a href="index.html">MENU1</a>
-						/ 
-						<a href="menu2.html">MENU2</a>
-						/ 
-						<a href="menu3.html">MENU3</a>
-						</center>
-                </div>
-            </div>
-        </div>
+</div>
+	<header>
+
     </header>
-    <!-- ****** Header Area End ****** -->
-
-    <!-- ****** Breadcumb Area Start ****** -->
-    <!-- ****** Breadcumb Area End ****** -->
-
-    <!-- ****** Archive Area Start ****** -->
-    <section class="archive-area section_padding_80">
-        <div class="container">
-            <div class="row">
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.1s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">Where To Get The Best Sunday Roast In The Cotswolds</h4>
-                            </a>
-                        </div>
-                    </div>
+    
+    <section id="banner">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-12">
+					<img src="images/logo.png">
+				    <div style='height:420px'></div>
                 </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The Top Breakfast And Brunch Spots In Hove, Brighton</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/4.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Pubs In The Lake District, Cumbria</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/5.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Brunch Spots In Newcastle, England</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">Where To Get The Best Sunday Roast In The Cotswolds</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.6s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The Top Breakfast And Brunch Spots In Hove, Brighton</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.7s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/4.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Pubs In The Lake District, Cumbria</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.8s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/5.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Brunch Spots In Newcastle, England</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="0.9s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">Where To Get The Best Sunday Roast In The Cotswolds</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="1s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The Top Breakfast And Brunch Spots In Hove, Brighton</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="1.1s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/4.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Pubs In The Lake District, Cumbria</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Post -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post wow fadeInUp" data-wow-delay="1.2s">
-                        <!-- Post Thumb -->
-                        <div class="post-thumb">
-                            <img src="img/blog-img/5.jpg" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <div class="post-meta d-flex">
-                                <div class="post-author-date-area d-flex">
-                                    <!-- Post Author -->
-                                    <div class="post-author">
-                                        <a href="#">By Marian</a>
-                                    </div>
-                                    <!-- Post Date -->
-                                    <div class="post-date">
-                                        <a href="#">May 19, 2017</a>
-                                    </div>
-                                </div>
-                                <!-- Post Comment & Share Area -->
-                                <div class="post-comment-share-area d-flex">
-                                    <!-- Post Favourite -->
-                                    <div class="post-favourite">
-                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                    </div>
-                                    <!-- Post Comments -->
-                                    <div class="post-comments">
-                                        <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
-                                    </div>
-                                    <!-- Post Share -->
-                                    <div class="post-share">
-                                        <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="post-headline">The 10 Best Brunch Spots In Newcastle, England</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="pagination-area d-sm-flex mt-15">
-                        <nav aria-label="#">
-                            <ul class="pagination">
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="page-status">
-                            <p>Page 1 of 60 results</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+             </div>
+       </div>    
     </section>
-    <!-- ****** Archive Area End ****** -->
+    
+	<div class="row" style="height:100px"></div>
+	
+    <section id="Beverage">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-12"> 
+					<h2>BEVERAGE</h2>
+                    <img class="parrern" src="images/dishdottm.png" alt=""/>
+					
+                	<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                    	
+						<h2>APERITIF / DIGESTIF</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Campari, Martini (Bianco, Extra Dry, Rosso), Pernod  <span>420</span></h3>
+                        <br>
+						<h3>Ricard, Fernet Branca, Aperol <span>420</span></h3>
+                        <br>
+						<h3>Taylor’s Special Ruby Port <span>450</span></h3>
+						
+                    </article>
+                    
+					<br><br><br>
+					
+                    <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>LIQUOR</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Amaretto, Cointreau, Drambuie, Kahlua Midori, Sambuca  <span>400</span></h3>
+                        <br>
+						<h3>Grand Marnier <span>480</span></h3>
+						<br>
+						<h3>Jägermeister <span>450</span></h3>
+						<br>
+						<h3>Baileys <span>450</span></h3>
+						
+                    </article>
+					
+				   <br><br><br>
+				   
+                   <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.9s">
+                    	
+						<h2>GIN</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Beefeater, Gordon’s <span>430</span></h3>
+                        <br>
+						<h3>Bombay Sapphire <span>500</span></h3>
+                        <br>
+						<h3>Tanqueray <span>450</span></h3>
+						<br>
+						<h3>Hendricks <span>650</span></h3>
+						
+                    </article> 
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>VODKA</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Smirnoff <span>450</span></h3>
+                        <br>
+						<h3>Absolut<span>490</span></h3>
+                        <br>
+						<h3>Grey Goose, Belvedere <span>600</span></h3>
+						<br>
+						<h3>Ketel One, Tito’s Handmads <span>530</span></h3>
+						
+                    </article>
 
-    <!-- ****** Instagram Area Start ****** -->
-    <div class="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio">
+					<br><br><br>
+				
+                	<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+						
+						<h2>RUM</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Bacardi, Havana Club 3YO, Captain Morgan Dark <span>490</span></h3>
+                        <br>
+						<h3>Havana Club 7YO, Phraya <span>530</span></h3>
+                        <br>
+						<h3>Ron Zacapa 23YO <span>650</span></h3>
+						
+                    </article>
+				   
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>TEQUILA</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Tres Magueyes Blanco <span>480</span></h3>
+                        <br>
+						<h3>Patron XO Café  <span>530</span></h3>
+                        <br>
+						<h3>Patron Silver, Patron Reposado, Don Julio Reposado <span>590</span></h3>
+						<br>
+						<h3>Patron Anejo <span>690</span></h3>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>COGNAC / ARMAGNAC</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Sempe VSOP <span>500</span></h3>
+                        <br>
+						<h3>Remy Martin VSOP, Courvoisier VSOP, Hennessy VSOP <span>650</span></h3>
+                        <br>
+						<h3>Remy Martin XO <span>1,480</span></h3>
+						<br>
+						<h3>Courvoisier XO, Hennessy XO <span>1,530</span></h3>
+						
+                    </article>	
 
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>SINGLE MALT</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Glenfiddich 12YO, Singleton 12YO <span>570</span></h3>
+                        <br>
+						<h3>Glenlivet 15YO  <span>780</span></h3>
+                        <br>
+						<h3>Glenmorangie 10YO <span>570</span></h3>
+						<br>
+						<h3>Laphroaig 10YO <span>690</span></h3>
+						<br>
+						<h3>Singleton 15YO <span>680</span></h3>
+						<br>
+						<h3>Singleton 18YO <span>690</span></h3>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>BLENDED</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Johnnie Walker Red, Chivas Regal 12YO, Ballentine’s Finest <span>480</span></h3>
+                        <br>
+						<h3>Johnnie Walker Black  <span>550</span></h3>
+                        <br>
+						<h3>Johnnie Walker Gold <span>760</span></h3>
+						<br>
+						<h3>Johnnie Walker Blue <span>1,330</span></h3>
+						<br>
+						<h3>John Jameson <span>500</span></h3>
+						<br>
+						<h3>Chivas Regal 25YO, Chivas Regal Royal Salute <span>1,630</span></h3>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>RYE / BOURBON</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Jim Beam, Jack Daniel’s, Canadian Club Rye <span>480</span></h3>
+                        <br>
+						<h3>Bulleit Bourbon  <span>550</span></h3>
+                        <br>
+						<h3>Bulleit Rye <span>600</span></h3>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>LOCAL</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Singha, Singha Light, Heineken	, Tiger , Asahi, Chang <span>480</span></h3>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>IMPORT</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Erdinger, Corona <span>450</span></h3>
+						<br>
+						<h3>Erdinger Dunkel <span>490</span></h3>
+						<br>
+						<h3>Clausthaler (Non-Alcoholic) <span>420</span></h3>
+						<br>
+						<h3>Hoegaarden <span>550</span></h3>
+						<br>
+						<h3>San Miguel | San Miguel Light <span>420</span></h3>
+						<br>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>SOFT DRINKS</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Coke, Diet Coke, Sprite, Ginger Ale, Tonic, Soda, Red Bull <span>350</span></h3>
+						<br>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>STILL WATER</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Acqua Panna (50cl) <span>190</span></h3>
+						<br>
+						<h3>Acqua Panna (75cl) <span>330</span></h3>
+						<br>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>SPARKLING WATER</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>San Pellegrino (25cl) <span>200</span></h3>
+						<br>
+						<h3>San Pellegrino (75cl) <span>400</span></h3>
+						<br>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>JUICE</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Coconut, Pineapple, Orange, Watermelon, Mango  <span>380</span></h3>
+						<br>
+						<h3>Guava, Cranberry, Grapefruit , Tomato, Apple <span>380</span></h3>
+						<br>
+						
+                    </article>
+					
+					<br><br><br>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.7s">
+                    	
+						<h2>HOT</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <h3>Espresso, Cappuccino, Latte  <span>260</span></h3>
+						<br>
+						<h3>Double Espresso <span>320</span></h3>
+						<br>
+						
+                    </article>
+					
                 </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+             </div>
+       </div>  
+    </section>
+    
+	<div class="row" style="height:100px"></div>
+	
+    <section id="Cocktail">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-12"> 
+					<h2>COCKTAIL</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+                	<img src="images/Cocktail.png" style="width:100%">
                 </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/3.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+             </div>
+       </div>    
+    </section>
+    
+	<div class="row" style="height:100px"></div>
+	
+    <section id="Dinner">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-12"> 
+					<h2>DINNER</h2>
+					<img class="parrern" src="images/dishdottm.png" alt=""/>
+				
+                	<img src="images/dinner1.png" style="width:100%">
+					<img src="images/dinner1.png" style="width:100%">	
                 </div>
-            </div>
-        </div>
+             </div>
+       </div>    
+    </section>
+    
+	<div class="row" style="height:100px"></div>
+	
+    <section id="SetMenu">
+    	<div class="container">
+    		<div class="row">
+				<h2>SET MENU</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+				<img src="images/Setmenu1.png" style="width:100%">
+				<img src="images/Setmenu2.png" style="width:100%">
+				<img src="images/Setmenu3.png" style="width:100%">              
+             </div>
+       </div>    
+    </section>
 
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/4.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+	<div class="row" style="height:100px"></div>
+	
+    <section id="WineList">
+    	<div class="container">
+    		<div class="row">
+				<h2>WINE</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+				
+			    <br>
+				<h2>Champagne</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+				<img src="images/Champagne.png" style="width:100%">
+				<br><br><br>
+				<h2>White Wine</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+				<img src="images/White Wine.png" style="width:100%">
+				<br><br><br>
+				<h2>Red Wine</h2>
+                <img class="parrern" src="images/dishdottm.png" alt=""/>
+				<img src="images/Red Wine.png" style="width:100%">				
+            </div>
+       </div>    
+    </section>
+     
+    <footer>
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-4 col-sm-4 col-sm-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
+
                 </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/5.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+            	<div class="col-lg-4 col-sm-4 col-sm-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.5s">
                 </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/6.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-sm-4 col-sm-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.7s">
                 </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- ****** Our Creative Portfolio Area End ****** -->
-
-    <!-- ****** Footer Social Icon Area Start ****** -->
-
-    <!-- ****** Footer Social Icon Area End ****** -->
-
-    <!-- ****** Footer Menu Area Start ****** -->
-
-	<footer class="footer_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Copywrite Text -->
-                    <div class="copy_right_text text-center">
-                        <p>Copyright @2018 All rights reserved | MP</p>
-                    </div>
-                </div>
-            </div>
+        	</div>
         </div>
     </footer>
-    <!-- ****** Footer Menu Area End ****** -->
+    
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fixed-responsive-nav.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
 
-    <!-- Jquery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap-4 js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins JS -->
-    <script src="js/others/plugins.js"></script>
-    <!-- Active JS -->
-    <script src="js/active.js"></script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
+</html>
