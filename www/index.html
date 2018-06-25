@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -26,7 +26,38 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <!--JS-->
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+var db = openDatabase('mydb', '1.0', 'Test DB', 3 * 1024 * 1024); 
 
+db.transaction(function (tx) { 
+   tx.executeSql('CREATE TABLE IF NOT EXISTS PRODUCT (id, mid, gid, name, price)');
+	
+
+$.getJSON( "http://119.59.122.82:8080/food/data.php", function(){
+    // Success
+	alert('ss');
+});
+   //tx.executeSql('INSERT INTO PRODUCT (id, mid, gid, name, price) VALUES (1, "1", "1", "Ricard, Fernet Branca, Aperol", "100")'); 
+   //tx.executeSql('INSERT INTO PRODUCT (id, mid, gid, name, price) VALUES (2, "1", "1", "Grand Marnier", "200")'); 
+}); 
+
+db.transaction(function (tx) { 
+   tx.executeSql('SELECT * FROM PRODUCT', [], function (tx, results) { 
+      var len = results.rows.length, i; 
+      
+	  //alert(len);
+	  //data = "<p>Found rows: " + len + "</p>"; 
+      //document.querySelector('#status').innerHTML +=  msg; 
+  
+      for (i = 0; i < len; i++) { 
+		 tr = '<tr><td align="center">'+results.rows.item(i).name+' '+results.rows.item(i).price+'</td></tr>';
+		 $('#F1').append(tr);
+      } 
+  
+   }, null); 
+});
+</script>
 </head>
 
 <body>
@@ -87,6 +118,17 @@
             	<div class="col-lg-12"> 
 					<h2>BEVERAGE</h2>
                     <img class="parrern" src="images/dishdottm.png" alt=""/>
+					
+					<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+                    	
+						<h2>TEST FOOD</h2>
+                    	<img class="parrern" src="images/dishdottm.png" alt=""/>
+                        <center>
+						<table id="F1" width='50%'></table>
+                        </center>
+						<br><br><br>
+						
+                    </article>
 					
                 	<article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                     	
@@ -447,5 +489,6 @@
   })();
 
 </script>
+
 </body>
 </html>
